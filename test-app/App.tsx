@@ -16,9 +16,3 @@ export default function App() {
     </ThemeProvider>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-
-//   },
-// });
