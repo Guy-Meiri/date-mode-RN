@@ -1,15 +1,15 @@
 import { View, Text, useColorScheme } from "react-native";
 import React, { FC, useEffect } from "react";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 import useColors from "../style/useColors";
+import { MyColors } from "../style/colors";
 
 const RootNavigator = ({ children }: React.PropsWithChildren) => {
-  const { colors } = useColors();
+  const { applyColors } = useColors();
   const colorScheme = useColorScheme();
 
-  //   useEffect(() => {
-  //     applyColors(colorScheme === "dark" ? Colors.dark : Colors.light);
-  //   }, [applyColors, colorScheme]);
+  useEffect(() => {
+    applyColors(colorScheme === "dark" ? MyColors.dark : MyColors.light);
+  }, [applyColors, colorScheme]);
   return <View>{children}</View>;
 };
 

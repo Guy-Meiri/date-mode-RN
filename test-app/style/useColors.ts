@@ -4,7 +4,7 @@ import { TColors } from "./colors";
 
 interface ColorType {
   colors: TColors;
-  //   applyColors: (colors: TColors) => void;
+  applyColors: (colors: TColors) => void;
 }
 
 const useColors = (): ColorType => {
@@ -12,9 +12,8 @@ const useColors = (): ColorType => {
   if (!store) {
     throw new Error("useColors must be defined.");
   }
-  console.log("useColors.ts: store: ", store);
   return {
-    // applyColors: store.applyColors,
+    applyColors: store.applyColors,
     colors: store.colors,
   };
 };

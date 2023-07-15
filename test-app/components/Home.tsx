@@ -8,18 +8,27 @@ const Home = () => {
 
   return (
     <View style={styles.container}>
-      <Text>hello 1</Text>
+      <Text style={styles.text}>
+        hello 1 fffffffffffffffffffffffffffffffffffffffffffffffff
+      </Text>
+      <Text style={styles.text}>
+        hello 1 fffffffffffffffffffffffffffffffffffffffffffffffff
+      </Text>
     </View>
   );
 };
 
 const createStyles = (colors: TColors) => {
-  console.log(colors + ": tests");
+  console.log(colors.black);
   return StyleSheet.create({
     container: {
-      backgroundColor: colors.secondary,
+      backgroundColor: colors.primary,
+
       alignItems: "center",
       justifyContent: "center",
+    },
+    text: {
+      color: colors.textPrimary,
     },
   });
 };

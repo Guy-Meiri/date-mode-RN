@@ -22,14 +22,14 @@ interface IColorPalettes {
 export const MyColors: IColorPalettes = {
   dark: {
     ...sharedColors,
-    primary: "red",
+    primary: "#000000",
     secondary: "#161629",
     textPrimary: sharedColors.white,
     textSecondary: "#67686E",
   },
   light: {
     ...sharedColors,
-    primary: "#F8F8F8",
+    primary: "red",
     secondary: "#E4E4E4",
     textPrimary: "#161629",
     textSecondary: "#9D5DB0",
